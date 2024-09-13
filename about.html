@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sub_about</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0989f3df13.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="../PRADA/js/main.js"></script>
+  <script src="../PRADA/js/about.js"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="logo">
+      <div class="menu"><img src="images/ham.png" alt=""></div>
+      <a href="index.html"><img class = "headlg" src="images/logo/logo_black_01.png" alt="프라다 헤더 로고"></a>
+    </div>
+    <div class="gnb_wrap">
+      <ul class="gnb">
+        <li>
+          <a href="">의류</a>
+          <ul class="sub">
+            <li>
+              <a href="">드레스</a>
+            </li>
+            <li>
+              <a href="">니트웨어</a>
+            </li>
+            <li>
+              <a href="">스커트</a>
+            </li>
+            <li>
+              <a href="">셔츠 및 탑</a>
+            </li>
+            <li>
+              <a href="">데님</a>
+            </li>
+            <li>
+              <a href="">티셔츠</a>
+            </li>
+            <li>
+              <a href="">재킷 및 코트</a>
+            </li>
+            <li>
+              <a href="">아우터</a>
+            </li>
+            <li>
+              <a href="">팬츠 및 반바지</a>
+            </li>
+            <li>
+              <a href="">가죽 의류</a>
+            </li>
+            <li>
+              <a href="">파자마 및 언더웨어</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">가방</a>
+          <ul class="sub">
+            <li>
+              <a href="">메신저백</a>
+            </li>
+            <li>
+              <a href="">백팩 및 벨트백</a>
+            </li>
+            <li>
+              <a href="">토트백</a>
+            </li>
+            <li>
+              <a href="">브리프케이스</a>
+            </li>
+            <li>
+              <a href="">클러치</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">슈즈</a>
+          <ul class="sub">
+            <li>
+              <a href="">스니커즈</a>
+            </li>
+            <li>
+              <a href="">로퍼</a>
+            </li>
+            <li>
+              <a href="">샌들</a>
+            </li>
+            <li>
+              <a href="">레이스업</a>
+            </li>
+            <li>
+              <a href="">부츠</a>
+            </li>
+            <li>
+              <a href="">아메리카 컵</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">악세서리</a>
+          <ul class="sub">
+            <li>
+              <a href="">지갑 및 카드홀더</a>
+            </li>
+            <li>
+              <a href="">하이테크 악세서리</a>
+            </li>
+            <li>
+              <a href="">모자 및 장갑</a>
+            </li>
+            <li>
+              <a href="">선글라스</a>
+            </li>
+            <li>
+              <a href="">벨트</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">파인주얼리</a>
+        </li>
+        <li>
+          <a href="">악세서리</a>
+          <ul class="sub">
+            <li>
+              <a href="">지갑 및 카드홀더</a>
+            </li>
+            <li>
+              <a href="">하이테크 악세서리</a>
+            </li>
+            <li>
+              <a href="">모자 및 장갑</a>
+            </li>
+            <li>
+              <a href="">선글라스</a>
+            </li>
+            <li>
+              <a href="">벨트</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">PRADA SPHERE</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="ham">
+        <ul class="ham_gnb_home">
+          <li class = "run"><i class="fa-solid fa-cart-shopping"></i></li>
+          <li class = "close_bt"><i class="fa-solid fa-x"></i> &nbsp;&nbsp;</li>
+        </ul>
+        <ul class="ham_gnb">
+        <li>
+              <div class="ham_gnb_gr active">
+                <p>의류</p>
+                <p href=""><span class="material-symbols-outlined">arrow_right
+              </span></p>
+              </div>
+              <ul class="ham_sub">
+                <li><a href="">드레스</a></li>
+                <li><a href="">니트웨어</a></li>
+                <li><a href="">스커트</a></li>
+                <li><a href="">셔츠 및 탑</a></li>
+                <li><a href="">데님</a></li>
+                <li><a href="">티셔츠</a></li>
+                <li><a href="">재킷 및 코트</a></li>
+                <li><a href="">아우터</a></li>
+                <li><a href="">팬츠 및 반바지</a></li>
+                <li><a href="">가죽의류</a></li>
+                <li><a href="">파자마 및 언더웨어</a></li>
+              </ul>
+        </li>
+        <li>
+          <div class="ham_gnb_gr">
+            <p>가방</p>
+            <p><span class="material-symbols-outlined">
+            arrow_right
+            </span></p>
+          </div>
+          <ul class="ham_sub">
+            <li><a href="">메신저백</a></li>
+            <li><a href="">백팩 및 벨트백</a></li>
+            <li><a href="">토트백</a></li>
+            <li><a href="">브리프케이스</a></li>
+            <li><a href="">클러치</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="ham_gnb_gr">
+            <p>슈즈</p>
+            <p><span class="material-symbols-outlined">
+            arrow_right
+            </span></p>
+          </div>
+          <ul class="ham_sub">
+            <li><a href="">스니커즈</a></li>
+            <li><a href="">로퍼</a></li>
+            <li><a href="">샌들</a></li>
+            <li><a href="">레이스업</a></li>
+            <li><a href="">부츠</a></li>
+            <li><a href="">아메리카 컵</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="ham_gnb_gr">
+            <p>악세서리</p>
+          <p><span class="material-symbols-outlined">arrow_right</span></p>
+          </div>
+          <ul class="ham_sub">
+            <li><a href="">지갑 및 카드 홀더</a></li>
+            <li><a href="">하이테크 악세서리</a></li>
+            <li><a href="">모자 및 장갑</a></li>
+            <li><a href="">선글라스</a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </li>
+        <li><a href="">파인주얼리</a></li>
+        <li><a href="">PRADA SPHERE</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+      <ul class="ham_end">
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-x-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-facebook"></i></li>
+      </ul>
+      <a href="index.html"><div class="ham_logo"><img src="images/logo/logo_black_01.png" alt=""></div></a>
+    </div>
+  </div>
+  <div id="section">
+    <div class="main">
+      <h1 class="main_title">WHO WE ARE<br><span>"PRADA"</span></h1>
+      <p class="main_txt">프라다 그룹은 럭셔리 산업의 글로벌 리더이자 다양한 문화 영역에서<br> 현대 사회와의 틀에 얽매이지 않는 대화의 해석을 제공합니다.</p>
+      <div class="main_banner">
+        <ul class="main_img">
+          <li><img src="images/backgroud (1).jpg" alt=""></li>
+          <li><img src="images/Capa_1.png" alt=""></li>
+          <li><img src="images/backgroud (3).jpg" alt=""></li>
+          <li><img src="images/backgroud (2).jpg" alt=""></li>
+        </ul>
+        <ul class="nav">
+          <li class = "in"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sustainable">
+      <h2 class="sus_title">지속가능성에 대한 프라다의 약속</h2>
+      <p class="sus_txt">지속가능성은 프라다 그룹 정체성의 바탕이 되는 요소로<br>
+        프라다 전략과 가치속에 깊이 뿌리를 내리고 있습니다.<br>
+        프라다 그룹의 지속가능성 약속은 '사람', '지구', '문화'에 기여함을 의미합니다.
+      </p>
+      <div class="sus_arrow">
+        <div class="arrow_left swiper-button-prev"></div>
+        <div class="arrow_right swiper-button-next"></div>
+      </div>
+      <div class="sus_congroup swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class ="swiper-slide">
+            <img src="images/Sustainability.png" alt="스페셜">
+            <p class="sus_name"><span>01</span>스페셜프로젝트</p>
+          </div>
+          <div class ="swiper-slide">
+            <img src="images/sub_pack.png" alt="패키징">
+            <p class="sus_name"><span>02</span>패키징</p>
+          </div>
+          <div class ="swiper-slide">
+            <img src="images/sub_enviro.jpg" alt="환경">
+            <p class="sus_name"><span>03</span>환경</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="change">
+    <h2 class="change_title">Be drivers of change</h2>
+    <p class="change_txt">변화의 원동력이 됨으로써 지구, 사람, 문화를 위해<br>
+      우리는 현대에 대한 틀에 얽매이지 않는 대화와 해석을 제공합니다.</p>
+    <ul class="change_group">
+      <li class = "culture acco" >
+        <ul class="change_conts">
+          <li class = "change_top"><img class = "conts_main" src="images/seabeyond.jpg" alt="front"></li>
+          <li class = "detail">
+            <p class="ch_title">"Culture"</p>
+            <p class="con_txt">
+              프라다는 창의성과 혁신을 중시하며, 패션과 예술의 경계를 허물어 독창적인 디자인과 독특한 브랜드 아이덴티티를 강조합니다. </p>
+              <img class = "letter" src="images/sub_culture.svg" alt="letter">
+          </li>
+        </ul>
+      </li>
+      <li class = "people">
+        <ul class="change_conts">
+          <li class = "detail">
+            <h3>"People"</h3>
+            <img class = "letter" src="images/sub_people.svg" alt="letter">
+            <p class="ch_title">"PEOPLE"</p>
+            <p class="con_txt">
+              프라다는 직원과 고객 모두에게 가치와 존중을 기반으로 한 관계를 구축하고자 합니다. 고객에게 맞춤형 서비스를 제공하여 개인의 개성과 욕구를 존중합니다.</p>
+          </li>
+          <li class = "change_top"> <img class = "conts_main" src="images/the_people.png" alt="front"></li>
+        </ul>
+      </li>
+      <li class = "planet">
+        <ul class="change_conts">
+          <li class = "change_top"><img class = "conts_main" src="images/sub_enviro.jpg" alt="front"></li>
+          <li class = "detail">
+            <p class="ch_title">"PLANET"</p>
+            <p class="con_txt">
+              프라다는 환경 보호와 지속 가능성을 중요한 가치로 삼아, 친환경적인 소재와 생산 과정을 도입하고 환경에 미치는 영향을 최소화하려는 노력을 지속적으로 기울이고 있습니다.
+            </p>
+            <img class = "letter" src="images/sub_planet.svg" alt="letter">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <main id="parallax__cont">
+    <div id="section1" class="parallax__item">
+        <h2 class="parallax__item__title">CULTURE</h2>
+        <figure class="parallax__item__imgWrap">
+            <div class="parallax__item__img"></div>
+        </figure>
+        <p class="parallax__item__desc reveal">프라다는 패션과 예술의 경계를 허물어 독창적인 디자인과<br> 독특한 브랜드 아이덴티티를 강조합니다.</p>
+      </div>
+    <div id="section2" class="parallax__item">
+        <h2 class="parallax__item__title reveal reveal_LTR" data-delay="0.8">PEOPLE</h2>
+        <figure class="parallax__item__imgWrap reveal reveal_LTR">
+            <div class="parallax__item__img"></div>
+        </figure>
+        <p class="parallax__item__desc reveal reveal_LTR" data-delay="0.5">프라다는 직원과 고객 모두에게<br> 가치와 존중을 기반으로 한 관계를 구축하고자 합니다.</p>
+    </div>
+    <div id="section3" class="parallax__item">
+        <h2 class="parallax__item__title reveal reveal" data-delay="0.8">PLANET</h2>
+        <figure class="parallax__item__imgWrap reveal reveal_TTB">
+            <div class="parallax__item__img"></div>
+        </figure>
+        <p class="parallax__item__desc reveal reveal_BTT" data-delay="0.5">프라다는 환경에 미치는 영향을<br>최소화하려는 노력을 지속적으로 기울이고 있습니다.</p>
+    </div>
+    </main>
+    <div class="renylon">
+      <div class="renylon_intro">
+        <div class="renylon_intro_left">
+          <img class = "model" src="images/sub_renylon.png" alt="renylon">
+        </div>
+        <div class="renylon_intro_right">
+          <div class="ecl">
+            <img class = "eclips" src="images/sub_eclips.png" alt="eclips">
+            <h2 class="renylon_title">"Prada Re-Nylon"</h2>
+          </div>
+          <p class="renylon_txt"><span>"프라다 리나일론 프로젝트"</span><br>프라다 유산의 필수적 요소이자 현대적인 패션으로의 접근방식을<br> 상징적으로 보여주는
+            리나일론은 프라다 DNA의 상징입니다.
+          </p>
+        </div>
+      </div>
+      <div class="renylon_conts">
+        <div class="renylon_left">
+          <img src="images/renylon_main.png" alt="seabeyond">
+          <h3 class="renylon_detail">프라다 컬렉션의 가장 아이코닉한<br> 디자인을 모두 확인해보세요.</h3>
+          <div class="button">
+            <p class="button_name">Shop now</p>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <ul class="renylon_product">
+          <li>
+            <img src="images/renylon (1).jpg" alt="">
+            <div class="angle"></div>
+            <p class="pro_name">헤어ACC</p>
+          </li>
+          <li>
+            <img src="images/renylon (2).jpg" alt="">
+            <div class="angle"></div>
+            <p class="pro_name">패션의류</p>
+          </li>
+          <li>
+            <img src="images/renylon (3).jpg" alt="">
+            <div class="angle"></div>
+            <p class="pro_name">풋웨어</p>
+          </li>
+          <li>
+            <img src="images/renylon (4).jpg" alt="">
+            <div class="angle"></div>
+            <p class="pro_name">Re-nylon</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="value">
+      <p class="value_txt"><span>Value of PRADA</span><br>프라다그룹이 제시하는 6가지의 가치를 확인해보세요. </p>
+      <div class="value_box">
+        <div class="value_line1"></div>
+      </div>
+      <div class="value_tabmenu">
+        <ul class="tab_bt">
+          <li class = "on"><p>01</p></li>
+          <li><p>02</p></li>
+          <li><p>03</p></li>
+          <li><p>04</p></li>
+          <li><p>05</p></li>
+          <li><p>06</p></li>
+        </ul>
+        <ul class="tab_conts">
+          <li>
+            <h2 class="tab_title">#RE-THINK</h2>
+            <p class="tab_txt">프라다 그룹은 혁신, 변혁, 독립의 대명사입니다.<br>
+              이러한 원칙은 브랜드의 본질을 표현할 수 있는 공유된 비전을 브랜드에 제공합니다.<br> 
+              모순에 직면하는 것을 두려워하지 않고 럭셔리의 지평을 넓힌 다양한 생각을 합니다.
+            </p>
+            <ul class="tab_detail">
+              <li><img src="images/Groupvalue.png" alt="1-1"></li>
+              <li><img src="images/tab_img (2).jpg" alt="1-2">
+                <p>브랜드 이야기<span class="material-symbols-outlined">north_east</span></p></li>
+              <li><img src="images/tab_img (3).jpg" alt="1-3">
+                <p>Shop<span class="material-symbols-outlined">north_east</span></p>
+                </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="tab_title">#INNOVATIVE</h2>
+            <p class="tab_txt">그룹은 창립 이래 정신의 핵심인 태도와 연구 및 혁신의 동의어인 <br>
+              100년 된 전통에 확고히 뿌리를 두고 있습니다. 
+              <br>이는 우리 조직의 산업 지식과 밀접하게 연관되어 있습니다.
+            </p>
+            <ul class="tab_detail">
+              <li><img src="images/Groupvalue2.png" alt="2-1"></li>
+              <li><img src="images/tab_img (1).jpg" alt="2-2">
+                <p>프라다 역사<span class="material-symbols-outlined">north_east</span></p></li>
+              <li><img src="images/sub_enviro.jpg" alt="2-3">
+                <p>Group 역사<span class="material-symbols-outlined">north_east</span></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="tab_title">#EXCELLENCE</h2>
+            <p class="tab_txt">프라다 그룹은 탁월함을 향한 모든 활동에 힘쓰고 있습니다.<br> 
+              직원들이 업무에서 완벽함을 추구하도록 이끄는 정신적 태도가 준비되어 있으며,<br>
+              항상 이전에 달성한 결과를 개선하고 능가합니다.
+            </p>
+            <ul class="tab_detail">
+              <li><img src="images/Groupvalue3.png" alt="3-1"></li>
+              <li><img src="images/tab_img (4).jpg" alt="3-2">
+                <p>채용 정보<span class="material-symbols-outlined">north_east</span></p></li>
+              <li><img src="images/tab_img (7).jpg" alt="3-3">
+                <p>더보기<span class="material-symbols-outlined">north_east</span></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="tab_title">#UNIQUENESS</h2>
+            <p class="tab_txt">열정, 호기심, 세부 사항에 대한 집착, 전문성은 우리 직원들의 독특한 자질입니다.<br> 
+              프라다 그룹은 지적 호기심을 되살리고 현대 사회의 진화를 해석할 수 있는 다양한 문화와 특성의 세계를 추구합니다.<br> 
+              또한 사람들이 잠재력을 최대한 발휘할 수 있는 포용적인 업무 환경을 조성하는 것을 목표로 합니다.
+            </p>
+            <ul class="tab_detail">
+              <li><img src="images/Groupvalue4.png" alt="4-1"></li>
+              <li><img src="images/tab_img (5).jpg" alt="4-2">
+                <p>Prada Group<span class="material-symbols-outlined">north_east</span></p></li></li>
+              <li><img src="images/seabeyond.jpg" alt="4-3">
+                <p>더보기<span class="material-symbols-outlined">north_east</span></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="tab_title">#BEYOND BOUNDARIES</h2>
+            <p class="tab_txt">예술, 철학, 건축 및 영화는<br>
+              그룹에 지속적인 영감의 원천을 제공하는 문화적 분야 중 일부일 뿐입니다.<br>
+              기대에 과감히 도전하고, 경계를 초월하는 시나리오를 창조하기 위해 네트워크 지평을 넓힙니다.
+            </p>
+            <ul class="tab_detail">
+              <li><img src="images/Groupvalue5.png" alt="5-1"></li>
+              <li><img src="images/model/model_110.jpg" alt="5-2">
+                <p>Network<span class="material-symbols-outlined">north_east</span></p></li>
+              <li><img src="images/prada22.jpg" alt="5-3">
+                <p>더보기<span class="material-symbols-outlined">north_east</span></p></li>
+            </ul>
+          </li>
+          <li>
+            <h2 class="tab_title">#SUSTAINABLE</h2>
+            <p class="tab_txt">그룹은 지속 가능성을 추구하며 <br>장소, 사람, 환경과 조화를 이루는 경제 성장과 혁신을 주도하고 있습니다.<br> 
+              또한 현대 문화 토론에 기여하는 것을 목표로 합니다.
+            </p>
+            <ul class="tab_detail">
+              <li><img src="images/Groupvalue6.png" alt="6-1"></li>
+              <li><img src="images/model/model_13.jpg" alt="6-2">
+                <p>News<span class="material-symbols-outlined">north_east</span></p></li>
+              <li><img src="images/sub_enviro.jpg" alt="6-3">
+                <p>더보기<span class="material-symbols-outlined">north_east</span></p></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="background">
+      <div class="back_banner"></div>
+    </div>
+    <div class="pradagroup">
+      <h2 class="pradagroup_title">프라다 그룹</h2>
+      <ul class="logo_gr">
+        <li><a href=""><img src="images/church's_logo_01 1.png" alt=""></a></li>
+        <li><a href=""><img src="images/ogcarshoe 1.png" alt=""></a></li>
+        <li><a href=""><img src="images/logo/miumiu.png" alt=""></a></li>
+        <li><a href=""><img src="images/logo/logo_black_01.png" alt=""></a></li>
+        <li><a href=""><img src="images/prada-luna-rossa.png" alt=""></a></li>
+        <li><a href=""><img src="images/logo/logo_mar.png" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="footer_top">
+      <div class="logo">
+        <a href="">
+          <img src="images/logo/logo_white_01.png" alt="프라다 로고">
+        </a>
+      </div>
+      <div class="fnb_wrap">
+        <ul class="fnb">
+          <li>
+            <a href="#">고객센터</a>
+          </li>
+          <li>
+            <a href="#">이용약관</a>
+          </li>
+          <li>
+            <a href="#">계열사</a>
+          </li>
+          <li>
+            <a href="#">자주묻는질문</a>
+          </li>
+          <li>
+            <a href="#">매장찾기</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sns_wrap">
+        <ul class="sns">
+          <li>
+            <a href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="copyright">
+        <p>©PRADA 2007 - 2024 | Tax registration number is 213-86-18599</p>
+        <p>회사명: 프라다 코리아 (유). 사업자등록번호: 213-86-18599. 대표자: 최문영</p>
+      </div>
+      <div class="button_wrap">
+        <div class="location">
+          <span class="material-symbols-outlined">
+            location_on
+          </span>
+          <p>매장찾기</p>
+        </div>
+        <div class="nations">
+          <p>ship to</p>
+          <img src="images/footer_kr.png" alt="">
+          <ul class="language">
+            <li class="korean">
+              <a href="#">
+                <img src="images/footer_kr.png" alt="">
+                <p>Korean</p>
+              </a>
+            </li>
+            <li class="siru">
+              <a href="#">
+                <img src="images/footer_sr.jpeg" alt="">
+                <p>Siruvian</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        freemode:true
+      },
+    });
+  </script>
+    <script>
+        const hide = (item) => {
+            gsap.set(item, {autoAlpha: 0});
+        }
+
+        const animate = (item) => {
+            let x = 0;
+            let y = 0;
+            let delay = item.dataset.delay;
+
+            if(item.classList.contains("reveal_LTR")){
+                x = -100,
+                y = 0
+            } else if(item.classList.contains("reveal_BTT")){
+                x = 0,
+                y = 100
+            } else if(item.classList.contains("reveal_TTB")){
+                x = 0,
+                y = -100
+            } else {
+                x = 100,
+                y = 0;
+            }
+
+            gsap.fromTo(item, 
+                {autoAlpha: 0, x: x, y: y}, 
+                {autoAlpha: 1, x: 0, y: 0, delay: delay, duration: 1.25, overwrite: "auto", ease: "expo"}
+            );
+        };
+
+        gsap.utils.toArray(".reveal").forEach(item => {
+            hide(item);
+
+            ScrollTrigger.create({
+                trigger: item,
+                start: "top bottom",
+                end: "bottom top",
+                markers: false,
+                onEnter: () => {animate(item)}
+            });
+        });
+    </script>  
+</body>
+</html>

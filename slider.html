@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIREC_slick</title>
+    
+    <style>
+        *{margin:0; padding:0;}
+        .clearFix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .wrap{
+            width: 100%; height: 288px;
+            margin: 150px auto;            
+            /* border:3px solid red; */
+            overflow: hidden;
+        }
+        .wrap .slider{
+            width: 2990px;
+            /* border:3px solid blue; */
+            margin-left: -210px;
+            /* background-color: skyblue; */
+        }
+        .box{
+            float:left;
+            width: 180px; height: 150px; margin: 15px;
+            text-align: center; font-size: 5em;
+            line-height: 130px;
+            margin-top: 30px;
+            transition: all 0.3s;
+        }
+        .box:nth-child(6){
+            width: 230px; height: 190px;
+            line-height: 180px;
+            margin-top: 0px;
+        }
+        .box img{
+          width: 100%;
+        }
+        .bg1{background-color: salmon;}
+        .bg2{background-color: olive;}
+        .bg3{background-color: dodgerblue;}
+        .bg4{background-color: orange;}
+        .bg5{background-color: green;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let i = 0;
+            let count = $(".slider>div").length;
+
+            setInterval(function(){
+                if(i == count - 1){
+                i = 0;
+            }else{
+                i++;
+            }
+            $(".slider").stop().animate({"margin-left":"-420px"},function(){
+                $(".slider>div").first().appendTo(".slider");
+                $(".slider").css({"margin-left":"-210px"});
+            });
+            },2000);
+            
+        });
+    </script>
+</head>
+<body>
+  <div class="wrap">
+    <div id="slider-div" class="slider clearFix">
+      <div class="box bg1">
+        <a href="#">
+          <img src="images/index_ready/index_ready_1.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg2">
+        <a href="#">
+          <img src="images/index_ready/index_ready_2.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg3">
+        <a href="#">
+          <img src="images/index_ready/index_ready_3.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg4">
+        <a href="#">
+          <img src="images/index_ready/index_ready_4.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg5">
+        <a href="#">
+          <img src="images/index_ready/index_ready_5.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg6">
+        <a href="#">
+          <img src="images/index_ready/index_ready_6.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg7">
+        <a href="#">
+          <img src="images/index_ready/index_ready_7.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg8">
+        <a href="#">
+          <img src="images/index_ready/index_ready_8.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg9">
+        <a href="#">
+          <img src="images/index_ready/index_ready_9.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg10">
+        <a href="#">
+          <img src="images/index_ready/index_ready_10.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg11">
+        <a href="#">
+          <img src="images/index_ready/index_ready_11.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg12">
+        <a href="#">
+          <img src="images/index_ready/index_ready_12.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg13">
+        <a href="#">
+          <img src="images/index_ready/index_ready_13.jpg" alt="">
+        </a>
+      </div>
+      <div class="box bg14">
+        <a href="#">
+          <img src="images/index_ready/index_ready_14.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
