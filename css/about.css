@@ -837,7 +837,9 @@ body{
 
 @media all and (max-width: 768px){
 #section .main{
-  width: 100%;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  /* border: 1px solid red; */
 }
 #section .main .main_title{
   margin-top: 50px;
@@ -861,8 +863,8 @@ body{
   margin-top: 100px;
 }
 #section .sustainable .sus_title{
-  width: 100%;
-  margin: 0 auto;
+  width: calc(100% - 50px);
+  margin: 10px auto;
   font-size: 15pt;
   text-align: center;
   border-top: 0.2px solid gray;
@@ -872,20 +874,25 @@ body{
   display: none;
 }
 #section .sustainable .sus_txt{
+  width: calc(100% - 50px);
+  margin: 0 auto;
   font-size: 10pt;
   text-align: center;
-  padding-left:10px;
-  padding-right: 10px;
 }
 #section .sustainable .sus_congroup .swiper-wrapper{
   margin-left: 80px;
 }
 #section .sustainable .swiper-wrapper .swiper-slide-active{
-  width: 500px!important;
-  /* height: 200px!important; */
+  width: 300px!important;
 }
 #section .sus_congroup .swiper-wrapper .swiper-slide .sus_name{
   font-size: 12pt;
+}
+#section .sustainable .swiper-slide img{
+  width: 80%;height: 200px;
+}
+#section .sustainable .sus_congroup{
+  height: 400px;
 }
 
 
@@ -894,12 +901,18 @@ body{
 #section .change{
   width: 100%;
   min-width: 10px;
-  margin-top: 100px;
+  margin-top: 0px;
   display: block;
 }
 #section .change .change_title{
+  width: calc(100% - 50px);
+  margin: 0 auto;
   font-size: 15pt;
   text-align: center;
+}
+#section .change .change_txt{
+  width: calc(100% - 50px);
+  margin: 10px auto;
 }
 #section .change .change_group{
   width: 100%;
@@ -997,6 +1010,7 @@ body{
   margin: 20px auto;
   font-size: 12pt;
   text-align: center;
+  padding: 20px 0px;
   /* border: 1px solid red; */
   background-color: lightblue;
 }
@@ -1013,11 +1027,11 @@ body{
 #section .renylon .renylon_conts .renylon_product{
   width: 100%;
   margin: 50px auto;
-  flex-wrap: nowrap;
 }
 #section .renylon .renylon_product li{
   width: 25%;
   height: 40%;
+  margin-top: 20px;
 }
 #section .renylon .renylon_conts .renylon_product>li .pro_name{
   width: 60%;height: 20%;
